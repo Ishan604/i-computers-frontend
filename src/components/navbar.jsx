@@ -1,10 +1,14 @@
+import { Link } from "react-router-dom";
+
 export default function Navbar() {
     return(
-        <div className="w-full h-[80px] bg-accent text-white flex flex-row gap-8 justify-center items-center font-bold text-2xl">
-            <div className="text-white font-bold text-xl">Home</div>
-            <div className="text-white font-bold text-xl">Admin</div>
-            <div className="text-white font-bold text-xl">Login</div>
-            <div className="text-white font-bold text-xl">Register</div>
+        <div className="w-full h-[80px] bg-accent text-white flex flex-row gap-8 justify-center items-center">
+            <Link to ="/">Home</Link>
+            <Link to ="/products">Products</Link>
+            <Link to ="/about">About</Link>
+            <Link to ="/admin">Admin</Link>
+            <Link to ="/signin">Signin</Link>
+            <Link to ="/login">Login</Link>
         </div>
     )
 }

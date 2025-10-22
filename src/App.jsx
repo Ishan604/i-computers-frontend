@@ -23,10 +23,10 @@ function App() {
       {/* <Prac/> */}
       {/* <Test/> */}
       <Navbar/>
-      <div className="w-full h-screen bg-primary text-secondary font-bold text-2xl">
+      <div className="w-full h-screen bg-primary text-secondary">
         <Routes path="/">
           <Route path='/' element={<HomePage/>}/>
-          <Route path='/admin' element={<AdminPage/>}/>
+          <Route path='/admin/*' element={<AdminPage/>}/> {/* Added wildcard to match nested routes under /admin */}
           <Route path='/login' element={<LoginPage/>}/>
           <Route path='/register' element={<RegisterPage/>}/>
         </Routes>
