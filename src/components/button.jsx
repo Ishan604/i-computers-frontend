@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Button = () => {
   return (
     <StyledWrapper>
-      <a className="btn" href="#">Exploree..</a>
+      <a className="btn" href="#">Explore..</a>
     </StyledWrapper>
   );
 }
