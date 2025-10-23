@@ -11,12 +11,34 @@ import HomePage from '../pages/homePage'
 import AdminPage from '../pages/adminPage'
 import LoginPage from '../pages/loginPage'
 import RegisterPage from '../pages/registerPage'
+import { Toaster } from 'react-hot-toast'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <BrowserRouter>
+      <Toaster 
+        position="top-right"
+        reverseOrder={false} 
+        toastOptions={{
+          success: {
+            style: {
+              background: 'green',
+            },
+          },
+          error: {
+            style: {
+              background: 'red',
+            },
+          },
+          className: '',
+          style: {
+            padding: '16px',
+            color: 'white',
+            duration: 3000
+          },
+        }}/>
       {/* <ProductCard name = "Laptop" image = "https://picsum.photos/id/1/200/300" price = "180000 Rs"/>
       <ProductCard name = "Phone" image = "https://picsum.photos/id/2/200/300" price = "89000 Rs"/>
       <ProductCard name = "Watch" image = "https://picsum.photos/id/3/200/300" price = "5500 Rs"/> */}
